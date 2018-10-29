@@ -15,6 +15,8 @@ public class ETS2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        /*Esto es una prueba para el repositorio de github*/
+        
         System.out.println("prueba completada");
     }
     
