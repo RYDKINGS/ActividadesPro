@@ -14,9 +14,10 @@ public class dados {
         
         for (int i = 0; i < lanzamiento.length ; i++) {
             
-            lanzamiento[i] = (int)(Math.random()* numeroDeLados);
-            
+            lanzamiento[i] = (int)(Math.random()* numeroDeLados); 
             suma += lanzamiento[i];
+            
+            System.out.println("Los puntos de la tirada "+i+" es: "+suma);
         }
         
         return suma;

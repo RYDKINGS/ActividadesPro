@@ -14,7 +14,7 @@ public class main {
     public static void main(String [] args){
         
          dados prueba1 = new dados();       
-         System.out.println("La suma de puntos es: "+prueba1.tirarDados(3,6));
+         System.out.println("\nLa suma de puntos es: "+prueba1.tirarDados(3,6));
     }
     
 }
