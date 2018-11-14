@@ -15,38 +15,50 @@ public class Actividad1_b {
     
     public static void ObtenerPrimos(int numeros){
 
-
         int arrayPrimos[] = new int[numeros];
         
         int numPrimo = 2;
         boolean primo = true;
+        int j = 0;
         
-        for (int i = 0; i < arrayPrimos.length; i++) {
+        while(j != numeros) {
             
-            int contador = 1;
+            int divisor = 1;
+            //primo = true;
             
-            while(contador != numPrimo){
-                if (numPrimo % contador == 0) {
-
-                    primo = false; 
-                    
+            while(divisor != numPrimo){
+                if (numPrimo % divisor == 0 && numPrimo != divisor && divisor != 1) {
+                    primo = false;
+                    divisor = numPrimo;
                 }
-                contador ++;
+                else{
+                    primo = true;
+                    divisor ++;
+                }
                 
             }
             
             if(primo == true){
-            arrayPrimos[i] = numPrimo;}
+                arrayPrimos[j] = numPrimo;
+                j++;
+            }
                        
             numPrimo ++;
              
         }
         
-      
+        j = 0;
+        
         for (int i = 0; i < arrayPrimos.length; i++) {
+              
+            System.out.print(arrayPrimos[i]+"\t");
+            j++;
             
+            if (j == 10) {
+                System.out.println("\n");  
+                j= 0;
+            }
             
-            System.out.print(arrayPrimos[i]);
         }
         
         
