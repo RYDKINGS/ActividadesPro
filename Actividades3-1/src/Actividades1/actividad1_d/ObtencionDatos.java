@@ -11,17 +11,20 @@ public class ObtencionDatos {
         //double nota = 0;
         double aux = 0;
         int indice = 0;
+        int i; 
         
-        for (int i = 0; i < lista.length; i++) {
+        for (i = 0; i < lista.length-1; i++) {
            
-            if (lista[i] > aux) {
+            if (lista[i] > lista[indice]) {
                 //nota = lista[i];
                 indice = i;
+                
             }
             
             aux = lista[i];
 
         }
+        
         return indice;
         
         
